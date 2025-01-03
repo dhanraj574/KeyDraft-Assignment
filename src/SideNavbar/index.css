@@ -1,0 +1,173 @@
+/* Side Navbar Styling */
+
+
+.sm-sidenavbar-cont{
+  position:fixed;
+  height:100%;
+  left:0;
+  top: 0;
+  background-color: #ffffff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transform: translateX(-110%);
+  transition: transform 0.3s ease; 
+  z-index: 1000;
+  margin: 0px;
+
+}
+
+.sm-sidenavbar-cont.open {
+  transform: translateX(0);
+}
+
+.sm-sidenavbar-cont.closed {
+  transform: translateX(-110%);
+}
+
+@media (min-width:1200px){
+  .sm-sidenavbar-cont{
+      transform: translateX(0) !important;
+    }
+  .sm-navbar-closebtn{
+      display: none;
+  }
+
+}
+
+@media (max-width:1199px){
+  .sm-navbar-arrow{
+      display: none;
+  }
+}
+
+.sm-sidenavbar-logocont{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:10px;
+  padding: 16px 16px 24px 22px;
+
+
+}
+
+.sm-sidenavbar-logocont > span {
+  display: inline-flex;
+  justify-content: center;
+  cursor: pointer;
+  
+  
+}
+
+.sm-sidenavbar-logoicon{
+ width:40px;
+
+
+}
+
+.sm-sidenavbar-logoname{
+  width:140px;
+  height:40px;
+
+}
+
+.sm-sidenavbar-list{
+  list-style-type: none;
+  padding-left: 0;
+  padding-left:12px; 
+  padding-right:12px;
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+}
+.sm-sidenavbar-list p {
+  margin: 0;
+  font-size: 16px;
+  font-family: var(--font-family-primary);
+}
+
+.sm-sidenavbar-listitem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap:10px;
+  padding:9px 12px 9px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  
+}
+.sm-sidenavbar-list a {
+  text-decoration: none;
+}
+
+.sm-sidenavbar-list Link{
+   border-width: 0px;
+}
+
+.sm-sidenavbar-listdropdown-item{
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: flex-start;
+  align-items: center;
+  gap:10px;
+  padding:9px 12px 9px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 5px;
+  
+}
+
+
+
+.sm-sidenavbar-listdropdown-item:hover{
+  background-color: #f1f1f3;
+  cursor: pointer;
+}
+
+.sm-sidenavbar-listitem:hover{
+  background-color: #f1f1f3;
+}
+
+.active{
+  background-color: var( --text-secondary-color);
+}
+
+.active:hover{
+  background-color: var( --text-secondary-color);
+}
+
+
+.sm-sidenavbar-listdropdown {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap:10px;
+  padding:9px 12px 9px 16px;
+  
+}
+
+.sm-sidenavbar-listitem > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap:10px;
+}
+
+.sm-sidenav-linktext{
+  font-size: 16px;
+  font-family: var(--font-family-primary);
+  color:var(--text-primary-color)
+}
+
+.active-text {
+  color:#ffffff;
+}
+
+.sm-sidenavbar-listdropdown:hover{
+  background-color: #f1f1f3;
+  cursor: pointer;
+}
+
+.sm-sidenavbar-list > li > ul{
+  padding-left: 0;
+  
+}
